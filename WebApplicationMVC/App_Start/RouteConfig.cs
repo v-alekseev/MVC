@@ -19,11 +19,11 @@ namespace WebApplicationMVC
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-            routes.MapRoute(
+  /*          routes.MapRoute(
                  name: "Hello",
                  url: "{controller}/{action}/{name}/{id}"
              );
-
+            */
         }
     }
 }

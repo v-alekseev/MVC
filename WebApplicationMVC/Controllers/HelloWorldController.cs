@@ -10,10 +10,10 @@ namespace WebApplicationMVC.Controllers
     {
         // 
         // GET: /HelloWorld/ 
- 
-        public string Index() 
-        { 
-            return "This is my <b>default</b> action..."; 
+
+        public ActionResult Index()
+        {
+            return View();
         } 
  
         // 
