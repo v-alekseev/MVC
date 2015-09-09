@@ -8,6 +8,25 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+
+    @using (Html.BeginForm())
+    {
+        <p>
+        <div class="form-group">
+            <div class="col-md-10">
+                Title: @Html.TextBox("SearchString", "", new { @class = "form-control text-box single-line" } ) <br />
+            </div>
+            <div class="col-md-10">
+               <input type="submit" value="Filter" class="btn btn-default" />
+            </div> 
+            <div class="col-md-10">
+                <br />
+            </div>       
+        </div>
+        </p>
+    <br />
+    }
+    
 </p>
 <table class="table">
     <tr>
