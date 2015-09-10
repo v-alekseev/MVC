@@ -18,6 +18,7 @@ namespace WebApplicationMVC.Models
         [DataType(DataType.Currency)]
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 
     public class MovieDBContext : DbContext
